@@ -41,14 +41,14 @@
   ],
   "vehicles": [
     {
-      "vehicleTypeID": 2,
+      "vehicleTypeID": 1,
       "brand": "VW",
       "model": "Polo",
       "fuelTypeID": 1,
       "numberOfSeats": "5",
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/2018_Volkswagen_Polo_SE_TSi_1.0_Front.jpg",
       "pricePerDay": "10",
-      "count": "10",
+      "count": "33",
       "id": 1
     },
     {
@@ -59,7 +59,7 @@
       "numberOfSeats": "5",
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/2015_Volkswagen_Golf_%285G%29_103TSI_R-Line_5-door_hatchback_%282016-04-07%29_01.jpg/2560px-2015_Volkswagen_Golf_%285G%29_103TSI_R-Line_5-door_hatchback_%282016-04-07%29_01.jpg",
       "pricePerDay": "20",
-      "count": "33",
+      "count": "10",
       "id": 2
     },
     {
@@ -67,12 +67,36 @@
       "brand": "Mercedes-Benz",
       "model": "CLK",
       "fuelTypeID": 2,
-      "numberOfSeats": "2",
+      "numberOfSeats": "5",
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mercedes_CLK_rear_20071029.jpg",
       "pricePerDay": "40",
-      "count": "2",
+      "count": "4",
       "id": 3
+    },
+    {
+      "vehicleTypeID": 4,
+      "brand": "Honda",
+      "model": "CR-V",
+      "fuelTypeID": 2,
+      "numberOfSeats": "5",
+      "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/2017_Honda_CR-V_front_4.11.18.jpg",
+      "pricePerDay": "40",
+      "count": "2",
+      "id": 4
     }
   ],
-  "customers": []
+  "customers": [
+    {
+      "fullName": "Ivan Ivanov",
+      "email": "ivan.ivanov@example.com",
+      "phoneNumber": "0899943123",
+      "id": 1
+    },
+    {
+      "fullName": "Georgi Ivanov",
+      "email": "georgi.ivanov@example.com",
+      "phoneNumber": "0899943124",
+      "id": 2
+    }
+  ]
 }

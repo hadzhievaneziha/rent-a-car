@@ -54,6 +54,14 @@ export function VehicleIndexPage() {
             </tr>
           </thead>
           <tbody>
+            {vehicle?.data?.length === 0 && (
+              <tr>
+                <td colSpan={9} className="text-center">
+                  No data
+                </td>
+              </tr>
+            )}
+
             {vehicle.data.map((vehicle) => {
               const currentVehicleType = vehicleType.data.find(
                 (x) => x.id === vehicle.vehicleTypeID
