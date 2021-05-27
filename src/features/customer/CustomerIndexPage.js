@@ -48,30 +48,30 @@ export function CustomerIndexPage() {
               </tr>
             )}
             {customer.data.map((customer) => (
-              <tr key={customer.id}>
-                <td>{customer.id}</td>
-                <td>{customer.fullName}</td>
-                <td>{customer.email}</td>
-                <td>{customer.phoneNumber}</td>
+              <tr key={customer?.id}>
+                <td>{customer?.id}</td>
+                <td>{customer?.fullName}</td>
+                <td>{customer?.email}</td>
+                <td>{customer?.phoneNumber}</td>
                 <td>
                   <Button
                     variant="primary"
                     as={Link}
-                    to={"/customers/" + customer.id}
+                    to={"/customers/" + customer?.id}
                   >
                     View
                   </Button>
                   <Button
                     variant="info"
                     as={Link}
-                    to={"/customers/" + customer.id + "/edit"}
+                    to={"/customers/" + customer?.id + "/edit"}
                   >
                     Edit
                   </Button>
                   <Button
                     variant="danger"
                     type="button"
-                    onClick={handleDeleteClick(customer.id)}
+                    onClick={handleDeleteClick(customer?.id)}
                   >
                     Delete
                   </Button>

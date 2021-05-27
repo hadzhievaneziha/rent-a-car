@@ -46,31 +46,45 @@ export function VehicleShowPage() {
         </Col>
       </Row>
       <Row>
-        <Col sm="2">Vehicle type</Col>
+        <Col sm="2">
+          <strong>Vehicle type</strong>
+        </Col>
         <Col sm="10">{currentVehicleType?.name}</Col>
       </Row>
       <Row>
-        <Col sm="2">Brand</Col>
+        <Col sm="2">
+          <strong>Brand</strong>
+        </Col>
         <Col sm="10">{vehicle?.entity?.brand}</Col>
       </Row>
       <Row>
-        <Col sm="2">Model</Col>
+        <Col sm="2">
+          <strong>Model</strong>
+        </Col>
         <Col sm="10">{vehicle?.entity?.model}</Col>
       </Row>
       <Row>
-        <Col sm="2">Fuel type</Col>
+        <Col sm="2">
+          <strong>Fuel type</strong>
+        </Col>
         <Col sm="10">{currentFuelType?.name}</Col>
       </Row>
       <Row>
-        <Col sm="2">Number of seats</Col>
+        <Col sm="2">
+          <strong>Number of seats</strong>
+        </Col>
         <Col sm="10">{vehicle?.entity?.numberOfSeats}</Col>
       </Row>
       <Row>
-        <Col sm="2">Price per day</Col>
+        <Col sm="2">
+          <strong>Price per day</strong>
+        </Col>
         <Col sm="10">{vehicle?.entity?.pricePerDay}</Col>
       </Row>
       <Row>
-        <Col sm="2">Count</Col>
+        <Col sm="2">
+          <strong>Count</strong>
+        </Col>
         <Col sm="10">{vehicle?.entity?.count}</Col>
       </Row>
     </>

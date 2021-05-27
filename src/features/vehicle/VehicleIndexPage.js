@@ -64,41 +64,48 @@ export function VehicleIndexPage() {
 
             {vehicle.data.map((vehicle) => {
               const currentVehicleType = vehicleType.data.find(
-                (x) => x.id === vehicle.vehicleTypeID
+                (x) => x.id === vehicle?.vehicleTypeID
               );
               const currentFuelType = fuelType.data.find(
-                (x) => x.id === vehicle.fuelTypeID
+                (x) => x.id === vehicle?.fuelTypeID
               );
 
               return (
-                <tr key={vehicle.id}>
-                  <td>{vehicle.id}</td>
-                  <td>{currentVehicleType.name}</td>
-                  <td>{vehicle.brand}</td>
-                  <td>{vehicle.model}</td>
-                  <td>{currentFuelType.name}</td>
-                  <td>{vehicle.numberOfSeats}</td>
-                  <td>{vehicle.pricePerDay}</td>
-                  <td>{vehicle.count}</td>
+                <tr key={vehicle?.id}>
+                  <td>{vehicle?.id}</td>
+                  <td>{currentVehicleType?.name}</td>
+                  <td>{vehicle?.brand}</td>
+                  <td>{vehicle?.model}</td>
+                  <td>{currentFuelType?.name}</td>
+                  <td>{vehicle?.numberOfSeats}</td>
+                  <td>{vehicle?.pricePerDay}</td>
+                  <td>{vehicle?.count}</td>
                   <td>
                     <Button
                       variant="primary"
                       as={Link}
-                      to={"/vehicles/" + vehicle.id}
+                      to={"/vehicles/" + vehicle?.id}
                     >
                       View
                     </Button>
                     <Button
+                      variant="warning"
+                      as={Link}
+                      to={"/rents/" + vehicle?.id + "/create"}
+                    >
+                      Rent
+                    </Button>
+                    <Button
                       variant="info"
                       as={Link}
-                      to={"/vehicles/" + vehicle.id + "/edit"}
+                      to={"/vehicles/" + vehicle?.id + "/edit"}
                     >
                       Edit
                     </Button>
                     <Button
                       variant="danger"
                       type="button"
-                      onClick={handleDeleteClick(vehicle.id)}
+                      onClick={handleDeleteClick(vehicle?.id)}
                     >
                       Delete
                     </Button>

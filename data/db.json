@@ -48,7 +48,7 @@
       "numberOfSeats": "5",
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/2018_Volkswagen_Polo_SE_TSi_1.0_Front.jpg",
       "pricePerDay": "10",
-      "count": "33",
+      "count": 28,
       "id": 1
     },
     {
@@ -59,7 +59,7 @@
       "numberOfSeats": "5",
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/2015_Volkswagen_Golf_%285G%29_103TSI_R-Line_5-door_hatchback_%282016-04-07%29_01.jpg/2560px-2015_Volkswagen_Golf_%285G%29_103TSI_R-Line_5-door_hatchback_%282016-04-07%29_01.jpg",
       "pricePerDay": "20",
-      "count": "10",
+      "count": 7,
       "id": 2
     },
     {
@@ -70,7 +70,7 @@
       "numberOfSeats": "5",
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mercedes_CLK_rear_20071029.jpg",
       "pricePerDay": "40",
-      "count": "4",
+      "count": 3,
       "id": 3
     },
     {
@@ -97,6 +97,56 @@
       "email": "georgi.ivanov@example.com",
       "phoneNumber": "0899943124",
       "id": 2
+    }
+  ],
+  "rents": [
+    {
+      "vehicleID": 1,
+      "price": 38,
+      "customerID": 1,
+      "startDateTime": "2021-04-27T21:00:00.000Z",
+      "endDateTime": "2021-05-30T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "vehicleID": 2,
+      "price": 167.4,
+      "customerID": 2,
+      "startDateTime": "2021-05-27T21:00:00.000Z",
+      "endDateTime": "2021-06-04T21:00:00.000Z",
+      "id": 2
+    },
+    {
+      "vehicleID": 3,
+      "price": 152,
+      "customerID": 1,
+      "startDateTime": "2021-05-27T21:00:00.000Z",
+      "endDateTime": "2021-05-30T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "vehicleID": 2,
+      "price": 378,
+      "customerID": 1,
+      "startDateTime": "2021-04-04T21:00:00.000Z",
+      "endDateTime": "2021-06-24T21:00:00.000Z",
+      "id": 4
+    },
+    {
+      "vehicleID": 1,
+      "price": 270,
+      "customerID": 1,
+      "startDateTime": "2021-03-31T21:00:00.000Z",
+      "endDateTime": "2021-06-29T21:00:00.000Z",
+      "id": 5
+    },
+    {
+      "vehicleID": 2,
+      "price": 510,
+      "customerID": 1,
+      "startDateTime": "2021-05-27T21:00:00.000Z",
+      "endDateTime": "2021-06-25T21:00:00.000Z",
+      "id": 6
     }
   ]
 }

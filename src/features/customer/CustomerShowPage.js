@@ -23,11 +23,15 @@ export function CustomerShowPage() {
     <>
       <h1>{customer?.entity?.fullName}</h1>
       <Row>
-        <Col sm="2">Email address</Col>
+        <Col sm="2">
+          <strong>Email address</strong>
+        </Col>
         <Col sm="10">{customer?.entity?.email}</Col>
       </Row>
       <Row>
-        <Col sm="2">Phone number</Col>
+        <Col sm="2">
+          <strong>Phone number</strong>
+        </Col>
         <Col sm="10">{customer?.entity?.phoneNumber}</Col>
       </Row>
     </>
