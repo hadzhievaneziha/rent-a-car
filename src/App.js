@@ -1,58 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
+import { VehiclePage } from "./features/vehicle/VehiclePage";
+import { CustomerPage } from "./features/customer/CustomerPage";
 
-function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand as={Link} to="/">
+          Rent-a-car
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link as={Link} to="/vehicles">
+              Vehicles
+            </Nav.Link>
+            <Nav.Link as={Link} to="/customers">
+              Customers
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <Container>
+        <Switch>
+          <Route path="/vehicles">
+            <VehiclePage />
+          </Route>
+          <Route path="/customers">
+            <CustomerPage />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/vehicles" />
+          </Route>
+        </Switch>
+      </Container>
+    </>
   );
 }
-
-export default App;
