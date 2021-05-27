@@ -69,7 +69,7 @@ export function RentCreatePage() {
     }
 
     return null;
-  }, [vehicle.data, rentDays, watchCustomerID]);
+  }, [rent.data, rentDays, watchCustomerID]);
   const finalPrice = useMemo(() => {
     if (!price) {
       return null;
